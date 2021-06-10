@@ -25,6 +25,7 @@ public class LetCode_input
 	driver.findElement(By.xpath("//button[@class='button is-white']")).click();
 	driver.findElement(By.xpath("//button[@routerlink='/edit']")).click();
 	driver.findElement(By.xpath("//button[contains(@class,'button is-primary')]")).sendKeys("DESHAN");
+	System.out.println("Test1 Passed!!!");
   }
   
 	
@@ -35,7 +36,9 @@ public class LetCode_input
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  driver.findElement(By.xpath("//button[@class='button is-white']")).click();
 	  driver.findElement(By.xpath("//button[@routerlink='/edit']")).click();
-	  driver.findElement(By.xpath("//input[@value='I am good']")).clear(); }
+	  driver.findElement(By.xpath("//input[@value='I am good']")).clear(); 
+	  System.out.println("Test2 Passed!!!");
+	  }
 	  
 	  @Test(priority = 3)
 	  public void test3() 
@@ -49,6 +52,7 @@ public class LetCode_input
 		WebElement ele =driver.findElement(By.xpath("//input[@value='ortonikc']"));
 		String result =ele.getAttribute("value");
 		System.out.println("TextBox 3 value: " + result);
+		System.out.println("Test3 Passed!!!");
 	  }
 
 	  
@@ -63,6 +67,7 @@ public class LetCode_input
 		driver.findElement(By.xpath("//button[@routerlink='/edit']")).click();
 		driver.findElement(By.xpath("//input[@value='Koushik Chatterjee']")).clear();
 		driver.findElement(By.xpath("//input[@value='Koushik Chatterjee']")).sendKeys("DESHAN");
+		System.out.println("Test4 Passed!!!");
 	  }
 
 	  

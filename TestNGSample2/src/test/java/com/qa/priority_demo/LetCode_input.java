@@ -83,11 +83,11 @@ public class LetCode_input
 		WebElement ele = driver.findElement(By.xpath("//label[text()='Confirm edit field is disabled']/following::input"));
 	   if (ele.isEnabled())
 	   {
-		   System.out.println("Yes, field is Enabled");
+		   System.out.println("Yes, field is Enable");
 	   }
 	   else
 	   {
-		   System.out.println("No , field is Disabled State");
+		   System.out.println("No , field is Disable State");
 	   }
 	    
 	  }
